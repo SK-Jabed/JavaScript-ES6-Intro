@@ -12,6 +12,18 @@ console.log(arrayMax);
 
 // Use Spread Operator To Copy
 const evenNumbers = [4, 6, 12, 8, 2, 10];
-const numbers2 = numbers;
-numbers2.push(14);
-console.log(numbers2);
+const even = evenNumbers;
+// even.push(14);
+// console.log(even);
+
+const myNumbers = [...evenNumbers];
+console.log(myNumbers);
+evenNumbers.push(14);
+console.log(myNumbers);
+console.log(evenNumbers);
+
+
+// Advanced
+const adv = [...evenNumbers, 9999]
+console.log(adv);
+
